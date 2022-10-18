@@ -1,0 +1,39 @@
+.red
+{
+    color: red;
+}
+.green
+{
+    color: green;
+}
+
+
+
+
+.text-top
+{
+    margin-top: -56px;
+    position: absolute;
+    display: flex;
+    h2 {
+        color: #6DCF97;
+        font-size: 24px;
+    }
+}
+.esp {
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+    input {
+        width: 85%;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid #000000a4;
+        margin-right: 40px;
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 33px;
+}

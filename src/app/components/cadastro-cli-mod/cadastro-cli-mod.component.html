@@ -1,0 +1,55 @@
+<div class="text-top">
+    <h2>Cadastrar Cliente por Módulo</h2>
+    <button mat-raised-button  routerLink="/tabela/cliente/modulo" class="btn-primary">
+        Visulizar tabela
+    </button>
+</div>
+<form>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Cliente</mat-label>
+            <mat-select name="modulo" [(ngModel)]= "modcliente.cliente">
+                <mat-option *ngFor="let c of cliente" [value]="c">
+                    {{ c.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Módulo</mat-label>
+            <mat-select name="modulo" [(ngModel)]= "modcliente.modulo">
+                <mat-option *ngFor="let m of modulo" [value]="m">
+                    {{ m.nome }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <!-- <mat-form-field>
+        <input matInput placeholder="Cliente" name="cliente" [(ngModel)]= "modcliente.cliente">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Módulo" name="modulo"  [(ngModel)]= "modcliente.modulo">
+    </mat-form-field> -->
+
+    <div>
+      <mat-form-field>
+        <mat-label>Quantidade Cliente</mat-label>
+        <input matInput  placeholder="Ex. 12" name= "quantidadeCliente"[(ngModel)]= "modcliente.quantidadeCliente">
+        <span matSuffix>un</span>
+      </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+          <mat-label>Quantidade Módulo</mat-label>
+          <input matInput  placeholder="Ex. 12" name= "quantidadeModulo"[(ngModel)]= "modcliente.quantidadeModulo">
+          <span matSuffix>un</span>
+        </mat-form-field>
+      </div>
+</form>
+
+<button mat-raised-button  class="btn-primary bottom" (click)="AddMod()">Cadastrar</button>
+

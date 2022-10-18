@@ -1,0 +1,21 @@
+h2 {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    .form-login {
+        display: flex;
+        flex-direction: column;
+
+        .btn-primary.top {
+            background-color: #6DCF97;
+            color: white;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}

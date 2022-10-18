@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.header .a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header .logo {
+  max-height: 220px;
+  max-width: 220px;
+}/*# sourceMappingURL=header.component.css.map */

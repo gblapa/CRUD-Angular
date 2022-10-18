@@ -1,0 +1,16 @@
+<h2>Preencha os campos para se<br> cadastrar :)</h2>
+
+<form>
+    <div class="form-login">
+        <mat-form-field>
+                <input matInput placeholder="E-mail" name="email" [(ngModel)]= "login.email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" name="senha" type="number" [(ngModel)]= "login.senha">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Usuário" name="user"  [(ngModel)]= "login.user">
+        </mat-form-field>
+        <button mat-raised-button  class="btn-primary top" (click)="msgAddPerfil()">Cadastrar-se</button>
+    </div>
+</form>

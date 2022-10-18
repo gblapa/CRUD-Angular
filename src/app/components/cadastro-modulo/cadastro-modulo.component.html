@@ -1,0 +1,19 @@
+<h1 class="h1-cliente">Cadastro de Módulo</h1>
+
+<form>
+    <mat-form-field>
+        <input matInput placeholder="Nome" name="nome" class="input-cadastro-modulo" [(ngModel)]= "modulo.nome">
+    </mat-form-field>
+
+    <h3>Status</h3>
+    <input type="radio" name="ativo" value="ativo" [(ngModel)]= "modulo.status">Ativo
+    <input type="radio" name="inativo" value="inativo" [(ngModel)]= "modulo.status">Inativo
+</form>
+
+<button mat-raised-button (click)="msgAddCliente()" class="btn-primary">
+    Salvar
+</button>
+
+<button mat-raised-button routerLink="/modulos">
+   Cancelar
+</button>

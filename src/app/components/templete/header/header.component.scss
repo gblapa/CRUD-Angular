@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    
+    height: auto;
+    span {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logo {
+                max-height: 120px;
+                max-width: 120px;
+                padding-top: 30px;
+                padding-left: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<h2>Faça seu login ou cadastre-se</h2>
+
+<form>
+    <div class="form-login">
+        <mat-form-field>
+                <input matInput placeholder="E-mail" name="cliente" [(ngModel)]= "login.email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" name="cliente" type="number" [(ngModel)]= "login.senha">
+        </mat-form-field>
+        <button mat-raised-button  class="btn-primary top">Entrar</button>
+        <button mat-raised-button  class="btn-primary bottom" routerLink="/login/cadastro">Cadastrar</button>
+    </div>
+</form>
+

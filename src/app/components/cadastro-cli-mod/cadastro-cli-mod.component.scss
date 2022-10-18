@@ -1,0 +1,39 @@
+.h1-cad-cli-mod {
+    margin-top: 33px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    div {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.text-top
+{
+    margin-top: -57px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 74.5%;
+    h2 {
+        color: #6DCF97;
+        font-size: 24px;
+    }
+}
+
+
+
+.btn-primary {
+    padding-top: -90px;
+    max-height: 40px;
+}
+
+.btn-primary.bottom {
+    margin-top: 10px;
+    background-color: #6DCF97;
+    color: white;
+}

@@ -1,0 +1,20 @@
+
+<h1 class="h1-cliente">Cadastro de Cliente</h1>
+
+<form>
+    <mat-form-field>
+        <input matInput placeholder="Nome" name="nome" class="input-cadastro-cliente" [(ngModel)]= "cliente.nome">
+    </mat-form-field>
+
+    <h3>Status</h3>
+    <input type="radio" name="ativo" value="ativo" [(ngModel)]= "cliente.status">Ativo
+    <input type="radio" name="inativo" value="inativo" [(ngModel)]= "cliente.status">Inativo
+</form>
+
+<button mat-raised-button (click)="msgAddCliente()" class="btn-primary">
+    Salvar
+</button>
+
+<button mat-raised-button routerLink="/clientes">
+   Cancelar
+</button>
